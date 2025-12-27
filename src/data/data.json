@@ -6,7 +6,8 @@
       "descriptionKey": "projects.fws.description",
       "url": "https://fitworldshop.com",
       "urlGit": "https://github.com/Koxone/FitWorldShop-Ecommerce-Next-Tailwind-Shopify-API",
-      "image": "/fws/logo.png",
+      "logoSrc": "/fws/logo.png",
+      "videoSrc": "/fws/fws.mp4",
       "featured": true,
       "src": "fws",
       "completed": true,
@@ -22,7 +23,8 @@
       "teamSize": "1",
       "overview": "projects.fws.overview",
       "features": "projects.fws.features",
-      "projectFeatures": "projects.fws.projectFeatures"
+      "projectFeatures": "projects.fws.projectFeatures",
+      "imgNumber": 13
     },
 
     "threadhive": {
@@ -31,7 +33,8 @@
       "descriptionKey": "projects.threadhive.description",
       "url": "https://www.threadhive.net/",
       "urlGit": "https://github.com/Koxone/ThreadHive-Private-Repository",
-      "image": "/threadhive/logo.png",
+      "logoSrc": "/threadhive/logo.png",
+      "videoSrc": "/threadhive/threadhive.mp4",
       "featured": true,
       "logo": "/Images/ProjectCards/threadhive.png",
       "src": "threadhive",
@@ -68,7 +71,8 @@
       "descriptionKey": "projects.beehealth.description",
       "url": "https://demo-beehealth.vercel.app/",
       "urlGit": "https://github.com/Koxone/DEMO-BeeHealth-Typescript-Next-Tailwind-MongoDB-JWT",
-      "image": "/beehealth/logo.png",
+      "logoSrc": "/beehealth/logo.png",
+      "videoSrc": "/beehealth/beehealth.mp4",
       "featured": true,
       "logo": "/Images/ProjectCards/beehealth.png",
       "src": "beehealth",

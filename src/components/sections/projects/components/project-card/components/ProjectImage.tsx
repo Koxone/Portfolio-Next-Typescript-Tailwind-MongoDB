@@ -4,14 +4,14 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Play, ArrowUpRight } from 'lucide-react';
 
-function ProjectImage({ src, urlGit, id }) {
+function ProjectImage({ logoSrc, urlGit, id }) {
   const router = useRouter();
 
   return (
     <div className="relative h-72 overflow-hidden">
       {/* Imagen */}
       <Image
-        src={src}
+        src={logoSrc}
         alt="Project Image"
         fill
         sizes="(max-width: 768px) 100vw, 33vw"

@@ -10,13 +10,14 @@ type ShowCaseProps = {
   gallery: string;
   slideshow: string;
   srcSlide: string;
+  imgNumber: number;
 };
 
-function ShowCase({ alt, src, gallery, slideshow, srcSlide }: ShowCaseProps) {
+function ShowCase({ alt, src, gallery, slideshow, srcSlide, imgNumber }: ShowCaseProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = Array.from({ length: 13 }, (_, i) => `/${srcSlide}/${i + 1}.webp`);
+  const images = Array.from({ length: imgNumber }, (_, i) => `/${srcSlide}/${i + 1}.webp`);
 
   const openSlideshow = (index: number) => {
     setCurrentIndex(index);
@@ -48,22 +49,35 @@ function ShowCase({ alt, src, gallery, slideshow, srcSlide }: ShowCaseProps) {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, prevImage, nextImage]);
 
+  const isVideo = src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.mov');
+
   return (
     <>
-      {/* Main Image */}
+      {/* Main Image/Video */}
       <div className="relative flex flex-col gap-4">
         <div
           className="relative aspect-video cursor-pointer overflow-hidden rounded-3xl border border-orange-400/50 shadow-2xl backdrop-blur-lg"
           onClick={() => openSlideshow(0)}
         >
-          <Image
-            src={src}
-            alt={alt}
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            style={{ objectFit: 'cover' }}
-            className="transition-all duration-300 ease-in-out hover:scale-105"
-          />
+          {isVideo ? (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              src={src}
+              className="h-full w-full object-cover transition-all duration-300 ease-in-out hover:scale-105"
+            />
+          ) : (
+            <Image
+              src={src}
+              alt={alt}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: 'cover' }}
+              className="transition-all duration-300 ease-in-out hover:scale-105"
+            />
+          )}
         </div>
         <div className="self-center text-center">
           <p className="text-xl leading-tight font-bold tracking-tight text-white lg:text-3xl">

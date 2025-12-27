@@ -5,8 +5,10 @@ import CardHeader from './components/CardHeader';
 import ProjectText from './components/ProjectText';
 import Technologies from './components/Technologies';
 import Activity from './components/Activity';
-import data from '@/data/data.json';
 import { useTranslation } from 'react-i18next';
+
+// Local Data
+import data from '@/data/data.json';
 
 export default function ProjectCard({ projectKey }) {
   const { t } = useTranslation();
@@ -22,7 +24,7 @@ export default function ProjectCard({ projectKey }) {
         <div className="absolute inset-0 bg-linear-to-br via-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
 
         {/* Image Section */}
-        <ProjectImage src={project.image} urlGit={project.urlGit} id={project.id} />
+        <ProjectImage logoSrc={project.logoSrc} urlGit={project.urlGit} id={project.id} />
 
         {/* Card Content */}
         <div className="space-y-6 p-6 text-white">
