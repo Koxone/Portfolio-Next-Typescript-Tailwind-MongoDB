@@ -9,7 +9,7 @@ function SocialLinks() {
   return (
     <div className="flex items-center justify-center gap-4">
       <a
-        href="/resume.docx"
+        href="/resume.pdf"
         download
         className="hover:flash hidden cursor-pointer rounded-[9999px] border bg-white px-2 py-1.5 font-medium text-black lg:block"
       >
