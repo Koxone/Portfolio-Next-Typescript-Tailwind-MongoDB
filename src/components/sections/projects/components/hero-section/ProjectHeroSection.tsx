@@ -18,6 +18,7 @@ function ProjectHeroSection({
   gallery,
   slideshow,
   srcSlide,
+  imgNumber,
 }) {
   return (
     <section className="relative max-w-300 justify-self-center overflow-hidden py-10">
@@ -62,11 +63,12 @@ function ProjectHeroSection({
           </div>
 
           <ShowCase
-            src={src}
             alt={alt}
+            src={src}
             gallery={gallery}
             slideshow={slideshow}
             srcSlide={srcSlide}
+            imgNumber={imgNumber}
           />
         </div>
       </div>

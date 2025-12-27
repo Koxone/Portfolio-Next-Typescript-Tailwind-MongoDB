@@ -37,11 +37,12 @@ export default function ProjectPage() {
         demo={project.url}
         code={project.urlGit}
         alt={project.titleKey}
-        src={project.image}
+        src={project.videoSrc}
         gallery={t('gallery')}
         slideshow={t('openGallery')}
         teamSize={project.teamSize}
         srcSlide={project.src}
+        imgNumber={project.imgNumber}
       />
 
       <main className="container mx-auto max-w-300 space-y-16 px-6 py-10">
