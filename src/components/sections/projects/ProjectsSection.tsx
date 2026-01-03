@@ -55,8 +55,8 @@ function ProjectsSection() {
 
       {/* Regular */}
       <div className="mb-6 flex flex-col gap-10 md:hidden lg:hidden lg:flex-row xl:flex">
-        <ProjectCard projectKey="beehealth" />
         <ProjectCard projectKey="threadhive" />
+        <ProjectCard projectKey="beehealth" />
         <ProjectCard projectKey="fws" />
       </div>
 
