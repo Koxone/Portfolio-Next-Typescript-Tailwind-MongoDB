@@ -87,13 +87,18 @@
       "technologies": [
         "Next.js 16",
         "React 19",
+        "Zustand",
         "TypeScript",
+        "JavaScript",
         "MongoDB",
         "Mongoose",
         "TanStack Query",
         "Tailwind CSS",
         "JWT",
+        "BCrypt",
         "Zod",
+        "Google Calendar API",
+        "Vercel BLOB",
         "Vercel"
       ],
       "tags": ["FullStack", "PWA", "SaaS", "Healthcare"],
